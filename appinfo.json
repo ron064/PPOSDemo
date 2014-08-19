@@ -1,0 +1,125 @@
+{
+    "shortName": "Ppos_Demo",
+    "companyName": "Ron64 & Pedrolane",
+    "capabilities": [
+        "configurable"
+    ],
+    "resources": {
+        "media": [
+            {
+                "name": "OVL_FULL",
+                "file": "data/OVL.bin",
+                "type": "raw"
+            },
+            {
+                "name": "BIN_BLOCK_DIG",
+                "file": "data/Block_Digits.bin",
+                "type": "raw"
+
+            },
+            {
+                "characterRegex": "[a-zA-Z0-9]",
+                "name": "FONT_ROBOTO_CONDENSED_20",
+                "file": "fonts/Roboto-Condensed.ttf",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[APM]",
+                "name": "FONT_ROBOTO_CONDENSED_SUBSET_10",
+                "file": "fonts/Roboto-Condensed.ttf",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9a-zA-z]",
+                "name": "FONT_ROBOTO_BOLD_22",
+                "file": "fonts/Roboto-Bold.ttf",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9]",
+                "name": "FONT_ROBOTO_BOLD_SUBSET_46",
+                "file": "fonts/Roboto-Bold.ttf",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[:0-9]",
+                "name": "FONT_ROBOTO_BOLD_SUBSET_41",
+                "file": "fonts/Roboto-Bold.ttf",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[:0-9]",
+                "name": "FONT_ROBOTO_BOLD_CONDENSED_SUBSET_40",
+                "file": "fonts/Roboto-BoldCondensed.ttf",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[A-Za-z0-9\\(\\)]",
+                "name": "FONT_GOTHAMXNARROW_BOLD_42",
+                "file": "fonts/GothamXNarrow-Bold.ttf",
+                "type": "font"
+            },
+            {
+                "name": "BIN_PRESP_ACOS",
+                "file": "data/Perspective_acos.bin",
+                "type": "raw"
+            },
+            {
+                "name": "BIN_PRESP_DIG",
+                "file": "data/Perspective_Digits.bin",
+                "type": "raw"
+            },
+            {
+                "name": "IMAGE_BT_DISCONNECTED",
+                "file": "images/bluetooth_not_connected.png",
+                "type": "png"
+            },
+
+
+
+
+            { "type": "png", "name": "PONE_IMAGE_MENU_ICON", "file": "PebbleONE/images/menu_icon.png" },
+            { "type": "png", "name": "PONE_IMAGE_LOGO", "file": "PebbleONE/images/pebble9x4.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_0",  "file": "PebbleONE/images/battery_0.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_10", "file": "PebbleONE/images/battery_10.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_20", "file": "PebbleONE/images/battery_20.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_30", "file": "PebbleONE/images/battery_30.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_40", "file": "PebbleONE/images/battery_40.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_50", "file": "PebbleONE/images/battery_50.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_60", "file": "PebbleONE/images/battery_60.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_70", "file": "PebbleONE/images/battery_70.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_80", "file": "PebbleONE/images/battery_80.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_90", "file": "PebbleONE/images/battery_90.png" },
+            { "type": "png", "name": "PONE_IMAGE_BATTERY_100", "file": "PebbleONE/images/battery_100.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_0",  "file": "PebbleONE/images/charging_0.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_10", "file": "PebbleONE/images/charging_10.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_20", "file": "PebbleONE/images/charging_20.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_30", "file": "PebbleONE/images/charging_30.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_40", "file": "PebbleONE/images/charging_40.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_50", "file": "PebbleONE/images/charging_50.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_60", "file": "PebbleONE/images/charging_60.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_70", "file": "PebbleONE/images/charging_70.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_80", "file": "PebbleONE/images/charging_80.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_90", "file": "PebbleONE/images/charging_90.png" },
+            { "type": "png", "name": "PONE_IMAGE_CHARGING_100", "file": "PebbleONE/images/charging_100.png" },
+            { "type": "png", "name": "PONE_IMAGE_BLUETOOTH_OFF", "file": "PebbleONE/images/bluetooth_off.png" },
+            { "type": "png", "name": "PONE_IMAGE_BLUETOOTH_ON", "file": "PebbleONE/images/bluetooth_on.png" },
+            {
+              "type": "font",
+              "name": "FONT_30",
+              "file": "PebbleONE/fonts/VarelaRound-Regular.ttf",
+              "characterRegex": "[0-9A-Za-z éáåäö]"
+            }
+        ]
+    },
+    "versionCode": 5,
+    "uuid": "1992ce9c-a35d-4282-a049-b14a95416bd9",
+    "appKeys": {
+        "AllSet": 2048
+    },
+    "longName": "Pebble Point of Sale Demo",
+    "versionLabel": "0.75",
+    "watchapp": {
+        "watchface": true
+    }
+}

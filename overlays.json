@@ -1,0 +1,51 @@
+{
+    "overlays" : 
+    [
+        {
+            "name"  : "fuzzy_time",
+            "files" : ["fuzzy_time.c","num2words.c"]
+        },
+        {
+            "name"  : "BlockSlide",
+            "files" : ["BlockSlide.c"]
+        },
+        {
+            "name"  : "accuinfo",
+            "files" : ["accuinfo.c"]
+        },
+        {
+            "name"  : "perspective",
+            "files" : ["perspective.c"]
+        },
+        {
+            "name"  : "Hop_Picker",
+            "files" : ["hop_picker.c"]
+        },
+        {
+            "name"  : "just_a_bit",
+            "files" : ["just_a_bit.c"]
+        },
+        {
+            "name"  : "illudere",
+            "library" : "libilludere.a",
+            "files" : ["illudere.c"]
+        },
+        {
+            "name"  : "pebble_one",
+            "library" : "libpebbleone.a",
+            "files" : ["pebble_one.c"]
+        },
+        {
+            "name"  : "tic_tock_toe",
+            "files" : ["tic_tock_toe.c"]
+        },
+        {
+            "name"  : "retroclock",
+            "files" : ["retroclock.c"]
+        },
+        {
+            "name"  : "simplicity",
+            "files" : ["simplicity.c"]
+        }
+    ]
+}

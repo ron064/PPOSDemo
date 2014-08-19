@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Selected: Configuration</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="main">
+	<div data-role="header" class="jqm-header">
+		<h1>Selected: Configuration </h1>
+	</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					<h3>The Selected watch-face:</h3>
+					<select id="Face">
+					<option value="0" selected="selected">Fuzzy</option>
+					<option value="1">Hop Picker</option>
+					<option value="2">Accu-Info</option>
+					<option value="3">Retro</option>
+					<option value="4">Prespective</option>
+					<option value="5">Just a Bit</option>
+					<option value="6">Illusion</option>
+					<option value="7">Tic-tock-toe</option>
+					<option value="8">Block Slide</option>
+					<option value="z">(Last used)</option>
+					</select>
+					</fieldset>
+				</div>
+
+	    <div data-role="collapsible">
+    	<h3>General options</h3>
+				
+			<div data-role="fieldcontain">
+				<label for="Inv">Background Color:</label>
+				<select name="Inv" id="Inv" data-role="slider">
+					<option value="0">Black</option>
+					<option value="1">White</option>
+				</select>
+			</div>
+
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+				Prefered date format:
+				<select id="Date">
+				<option value="1" selected="selected">D-M-Y</option>
+				<option value="2">M-D-Y</option>
+				<option value="3">Y-M-D</option>
+				</select>
+				</fieldset>
+			</div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+				Prefered Language(only in blockSlide now):
+				<select id="Lang">
+				<option value="1">Dutch</option>
+				<option value="2" selected="selected">English</option>
+				<option value="3">French</option>
+				<option value="4">German</option>
+				<option value="5">Spanish</option>
+				<option value="6">Italian</option>
+				</select>
+				</fieldset>
+			</div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+				Show battery:
+				<select id="Bat">
+				<option value="0">Show</option>
+				<option value="1">Hide</option>
+				<option value="2">Only if low or charging</option>
+				</select>
+				</fieldset>
+			</div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+				Display BT status:
+				<select id="Comm">
+				<option value="0">Show</option>
+				<option value="1">Hide</option>
+				<option value="2">Show only disconnected</option>
+				</select>
+				</fieldset>
+			</div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+				Buzz on losing communication:
+				<select id="BuzzDis">
+						<option value="0">None</option>
+						<option value="1">Single</option>
+						<option value="2">Double</option>
+						<option value="3">Long</option>
+				</select>
+				</fieldset>
+			</div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+				Buzz on resuming communication:
+				<select id="BuzzCon">
+						<option value="0">None</option>
+						<option value="1">Single</option>
+						<option value="2">Double</option>
+						<option value="3">Long</option>
+				</select>
+				</fieldset>
+			</div>
+		</div>
+
+    	<h3>Watch-Face options</h3>
+		
+		<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+			<div data-role="collapsible">
+		        <h3>Just a bit</h3>
+		    	<div data-role="fieldcontain">
+					<label for="BitRL">Bit LSB side:</label>
+					<select name="BitRL" id="BitRL" data-role="slider">
+						<option value="1">Left</option>
+						<option value="2">Right</option>
+					</select>
+				</div>
+		    </div>
+		    <div data-role="collapsible">
+		        <h3>BlockSlide</h3>
+		    	<div data-role="fieldcontain">
+					<label for="BlockLine">separating line:</label>
+					<select name="BlockLine" id="BlockLine" data-role="slider">
+						<option value="2">Show</option>
+						<option value="1">Hide</option>
+					</select>
+				</div>
+		    	<div data-role="fieldcontain">
+					<label for="Blkday">Show day(or year):</label>
+					<select name="Blkday" id="Blkday" data-role="slider">
+						<option value="0">Year</option>
+						<option value="1">day</option>
+					</select>
+				</div>
+		    	<div data-role="fieldcontain">
+					<label for="Blkrnd">Round cornrs of digits:</label>
+					<select name="Blkrnd" id="Blkrnd" data-role="slider">
+						<option value="0">rounded</option>
+						<option value="1">blockish</option>
+					</select>
+				</div>
+			</div>
+		    <div data-role="collapsible">
+		    	<h3>HopPicker</h3>
+		        <div data-role="fieldcontain">
+					<label for="HPBW">Hop Picker Black & White:</label>
+					<select name="HPBW" id="HPBW" data-role="slider">
+						<option value="0">OFF</option>
+						<option value="1">ON</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="HPINV">Hop Picker Inverted:</label>
+					<select name="HPINV" id="HPINV" data-role="slider">
+						<option value="0">OFF</option>
+						<option value="1">ON</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="HPDate">Hop Picker Display the date:</label>
+					<select name="HPDate" id="HPDate" data-role="slider">
+						<option value="0">OFF</option>
+						<option value="1">ON</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="HPHand">Hop Picker Choose the hand:</label>
+					<select name="HPHand" id="HPHand" data-role="slider">
+						<option value="0">Arrow</option>
+						<option value="1">Line</option>
+					</select>
+				</div>
+		    </div>
+
+		        <div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					<h3>Selection mode</h3>
+					<select id="Mode">
+					<option value="0" selected="selected">Jump next</option>
+					<option value="1">Tap direction(change)</option>
+					<option value="2">Tap direction(return)</option>
+					<option value="8">Tap (cycle Selection)</option>
+					<option value="3">Tap in pos(change)</option>
+					<option value="4">Tap in pos(return)</option>
+					<option value="5">Demo (All) </option>
+					<option value="6">Demo (Random)</option>
+					<option value="7">Demo (cycle Selection)</option>
+					</select>
+					</fieldset>
+				</div>
+		    <div data-role="collapsible">
+		    	<h3>Selecting optional displays</h3>
+		
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					1st /TapX Right (/Hand Down):
+					<select id="FaceXP">
+					<option value="0">Fuzzy</option>
+					<option value="1" selected="selected">Hop Picker</option>
+					<option value="2">Accu-Info</option>
+					<option value="3">Retro</option>
+					<option value="4">Prespective</option>
+					<option value="5">Just a Bit</option>
+					<option value="6">Illusion</option>
+					<option value="7">Tic-tock-toe</option>
+					<option value="8">Block Slide</option>
+					<option value="z">None</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					2nd /TapX Left (/hand up):
+					<select id="FaceXN">
+					<option value="0">Fuzzy</option>
+					<option value="1">Hop Picker</option>
+					<option value="2" selected="selected">Accu-Info</option>
+					<option value="3">Retro</option>
+					<option value="4">Prespective</option>
+					<option value="5">Just a Bit</option>
+					<option value="6">Illusion</option>
+					<option value="7">Tic-tock-toe</option>
+					<option value="8">Block Slide</option>
+					<option value="z">None</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					3rd /TapY Away (/Shake hand):
+					<select id="FaceYP">
+					<option value="0">Fuzzy</option>
+					<option value="1">Hop Picker</option>
+					<option value="2">Accu-Info</option>
+					<option value="3" selected="selected">Retro</option>
+					<option value="4">Prespective</option>
+					<option value="5">Just a Bit</option>
+					<option value="6">Illusion</option>
+					<option value="7">Tic-tock-toe</option>
+					<option value="8">Block Slide</option>
+					<option value="z">None</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					4th /TapY inward (/back):
+					<select id="FaceYN">
+					<option value="0">Fuzzy</option>
+					<option value="1">Hop Picker</option>
+					<option value="2">Accu-Info</option>
+					<option value="3">Retro</option>
+					<option value="4" selected="selected">Prespective</option>
+					<option value="5">Just a Bit</option>
+					<option value="6">Illusion</option>
+					<option value="7">Tic-tock-toe</option>
+					<option value="8">Block Slide</option>
+					<option value="z">None</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					5th /TapZ up (/face down):
+					<select id="FaceZP">
+					<option value="0">Fuzzy</option>
+					<option value="1">Hop Picker</option>
+					<option value="2">Accu-Info</option>
+					<option value="3">Retro</option>
+					<option value="4">Prespective</option>
+					<option value="5">Just a Bit</option>
+					<option value="6" selected="selected">Illusion</option>
+					<option value="7">Tic-tock-toe</option>
+					<option value="8">Block Slide</option>
+					<option value="z">None</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					6th /TapZ down (/horizontal):
+					<select id="FaceZN">
+					<option value="0">Fuzzy</option>
+					<option value="1">Hop Picker</option>
+					<option value="2">Accu-Info</option>
+					<option value="3">Retro</option>
+					<option value="4">Prespective</option>
+					<option value="5">Just a Bit</option>
+					<option value="6">Illusion</option>
+					<option value="7">Tic-tock-toe</option>
+					<option value="8" selected="selected">Block Slide</option>
+					<option value="z">None</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					Delay in Demo mode:
+					<select id="Time">
+					<option value="0">2 sec</option>
+					<option value="1">3 sec</option>
+					<option value="2" selected="selected">5 sec</option>
+					<option value="3">7 sec</option>
+					<option value="4">10 sec</option>
+					<option value="5">15 sec</option>
+					<option value="6">20 sec</option>
+					<option value="7">30 sec</option>
+					<option value="8">60 sec</option>
+					</select>
+					</fieldset>
+				</div>
+		    </div>
+			
+
+		    <div data-role="collapsible">
+		    	<h3>Battery/communication (Next version June-14)</h3>
+
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					Display battery:
+					<select id="bat">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+					<option value="2">Below 30% or charging</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					Display Connection status:
+					<select id="comm">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+					<option value="2">Show only Disconnected</option>
+					</select>
+					</fieldset>
+				</div>
+
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					Buzz on losing communication:
+					<select id="buzzdis">
+					<option value="0">None</option>
+					<option value="1">Single</option>
+					<option value="2">Double</option>
+					<option value="3">Long</option>
+					</select>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+					Buzz on resuming communication:
+					<select id="buzzcon">
+					<option value="0">None</option>
+					<option value="1">Single</option>
+					<option value="2">Double</option>
+					<option value="3">Long</option>
+					</select>
+					</fieldset>
+				</div>
+		    </div>
+			
+		</div>			
+
+		
+		
+
+		<div class="ui-body ui-body-b">
+			<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><button type="submit" data-theme="d" id="b-cancel">Cancel</button></div>
+			<div class="ui-block-b"><button type="submit" data-theme="a" id="b-submit">Submit</button></div>
+			</fieldset>
+		</div>
+	</div>
+</div>
+
+<script>
+	var AllSetEnum = {
+		"Inv":    0,	"Date":   1,	"Lang":   2,	"Bat":    3,
+		"Comm":   4,	"BuzzDis":5,	"BuzzCon":6,	"Res1":   7,
+		"BitRL":  8,	"BlockLine":9,	"HPDate": 10,	"HPBW":   11,
+		"HPINV":  12,	"HPHand": 13,	"Res2":   14,	"Res3":   15,
+		"Mode":   16,	"Face":   17,	"FaceXP": 18,	"FaceXN": 19,
+		"FaceYP": 20,	"FaceYN": 21,	"FaceZP": 22,	"FaceZN": 23,
+		"Time":   24,	"Blkday": 25,	"Blkrnd": 26,
+	};
+	String.prototype.replaceAt=function(index, character) {
+	    return this.substr(0, index) + character + this.substr(index+character.length);
+	}
+	function setCharAt(str,index,chr) {
+    	if(index > str.length-1) return str;
+    	return str.substr(0,index) + chr + str.substr(index+1);
+	}
+	function updateSettings() {
+		if (window.location.search) {
+			var settings = decodeURIComponent(window.location.search).replace('?settings=','');
+			if (settings == "null") {
+				settings = '{"AllSet":"0100200022100000001234682000000000"}';
+			}
+			if (settings) {
+				var json = $.parseJSON(settings);
+				if (json.AllSet) {
+					$('#Inv').val(json.AllSet[AllSetEnum.Inv]).slider('refresh');
+					$('#Date').val(json.AllSet[AllSetEnum.Date]).selectmenu('refresh');
+					$('#Bat').val(json.AllSet[AllSetEnum.Bat]).selectmenu('refresh');
+					$('#Comm').val(json.AllSet[AllSetEnum.Comm]).selectmenu('refresh');
+					$('#BuzzDis').val(json.AllSet[AllSetEnum.BuzzDis]).selectmenu('refresh');
+					$('#BuzzCon').val(json.AllSet[AllSetEnum.BuzzCon]).selectmenu('refresh');
+					$('#BitRL').val(json.AllSet[AllSetEnum.BitRL]).slider('refresh');
+					$('#BlockLine').val(json.AllSet[AllSetEnum.BlockLine]).slider('refresh');
+					$('#HPDate').val(json.AllSet[AllSetEnum.HPDate]).slider('refresh');
+					$('#HPINV').val(json.AllSet[AllSetEnum.HPINV]).slider('refresh');
+					$('#HPHand').val(json.AllSet[AllSetEnum.HPHand]).slider('refresh');
+					$('#HPBW').val(json.AllSet[AllSetEnum.HPBW]).slider('refresh');
+					$('#Lang').val(json.AllSet[AllSetEnum.Lang]).selectmenu('refresh');
+					$('#Mode').val(json.AllSet[AllSetEnum.Mode]).selectmenu('refresh');
+					$('#Face').val(json.AllSet[AllSetEnum.Face]).selectmenu('refresh');
+					$('#FaceXP').val(json.AllSet[AllSetEnum.FaceXP]).selectmenu('refresh');
+					$('#FaceXN').val(json.AllSet[AllSetEnum.FaceXN]).selectmenu('refresh');
+					$('#FaceYP').val(json.AllSet[AllSetEnum.FaceYP]).selectmenu('refresh');
+					$('#FaceYN').val(json.AllSet[AllSetEnum.FaceYN]).selectmenu('refresh');
+					$('#FaceZP').val(json.AllSet[AllSetEnum.FaceZP]).selectmenu('refresh');
+					$('#FaceZN').val(json.AllSet[AllSetEnum.FaceZN]).selectmenu('refresh');
+					$('#Time').val(json.AllSet[AllSetEnum.Time]).selectmenu('refresh');
+					$('#Blkday').val(json.AllSet[AllSetEnum.Blkday]).slider('refresh');
+					$('#Blkrnd').val(json.AllSet[AllSetEnum.Blkrnd]).slider('refresh');
+				}
+			}
+		}
+    }
+
+	function saveOptions() {
+					  
+		var AllSet = "00000000000000000000000000000000";
+
+		AllSet = setCharAt(AllSet,AllSetEnum.Inv,$("#Inv").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Date,$("#Date").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Bat,$("#Bat").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Comm,$("#Comm").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.BuzzDis,$("#BuzzDis").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.BuzzCon,$("#BuzzCon").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.BitRL,$("#BitRL").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.BlockLine,$("#BlockLine").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.HPDate,$("#HPDate").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.HPINV,$("#HPINV").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.HPHand,$("#HPHand").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.HPBW,$("#HPBW").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Lang,$("#Lang").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Mode,$("#Mode").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Face,$("#Face").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.FaceXP,$("#FaceXP").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.FaceXN,$("#FaceXN").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.FaceYP,$("#FaceYP").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.FaceYN,$("#FaceYN").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.FaceZP,$("#FaceZP").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.FaceZN,$("#FaceZN").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Time,$("#Time").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Blkday,$("#Blkday").val());
+		AllSet = setCharAt(AllSet,AllSetEnum.Blkrnd,$("#Blkrnd").val());
+
+		var options = {
+			'AllSet' : AllSet
+		};
+
+		return options;
+	}
+
+	$().ready(function() {
+		$("#b-cancel").click(function() {
+			document.location = "pebblejs://close";
+		});
+		$("#b-submit").click(function() {
+			var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
+			document.location = location;
+		});
+	});
+
+	$('#main').bind('pageinit', updateSettings);
+</script>
+
+</body>
+</html>
