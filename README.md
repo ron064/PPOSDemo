@@ -37,6 +37,11 @@ To practice use of overlay we suggest that you will prepare a watchface for the 
 * Test your watchface for leaks. Use pebble logs and make sure you see Still allocated <0B> when you exit the app.
 * For settings, define yours in the enum at config.h . Use this enum for your settings with AllSet[SET_my_def], and set its values in the html file.
 
+We made two example projects where we converted exsisting watchface of other developers to work as overlay in this project:
+
+- [BlockSlide](https://github.com/ron064/Blockslide-Date_2.0)
+- [PebbleONE](https://github.com/ron064/PebbleONE)
+
 ### for overlay ###
 
 * In config.h for OVL_RESOURCE_IDS[], add 0 for every screen in its correct position when it's not overlay. Add RESOURCE_ID when it is overlay.
