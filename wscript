@@ -162,7 +162,7 @@ def generate_default_ld_script(task):
 
 def get_app_length(elf_file):
     app_length=0
-    readelf_process=Popen(['arm-none-eabi-readelf','-S',elf_file],stdout=PIPE)
+    readelf_process=Popen(['arm-none-eabi-readelf','-SW',elf_file],stdout=PIPE)
     readelf_output=readelf_process.communicate()[0]
     if not readelf_output:
         raise InvalidBinaryError()
@@ -180,7 +180,7 @@ def get_app_length(elf_file):
 
 def get_strt_length(elf_file):
     strt_length=0
-    readelf_process=Popen(['arm-none-eabi-readelf','-S',elf_file],stdout=PIPE)
+    readelf_process=Popen(['arm-none-eabi-readelf','-SW',elf_file],stdout=PIPE)
     readelf_output=readelf_process.communicate()[0]
 
     if not readelf_output:
@@ -235,7 +235,7 @@ def extract_ovl_sections(task):
             f.write(data)
 
     def extract_sections(elf_file):
-        readelf_process=Popen(['arm-none-eabi-readelf','-S',elf_file],stdout=PIPE)
+        readelf_process=Popen(['arm-none-eabi-readelf','-SW',elf_file],stdout=PIPE)
         readelf_output=readelf_process.communicate()[0]
         if not readelf_output:
             raise InvalidBinaryError()
