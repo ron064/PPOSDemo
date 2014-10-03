@@ -43,7 +43,7 @@ To practice use of overlay we suggest that you will prepare a watchface for the 
 We made two example projects where we converted existing watchface of other developers to work as overlay in this project:
 
 - [BlockSlide](https://github.com/ron064/Blockslide-Date_2.0)
-- [PebbleONE](https://github.com/ron064/PebbleONE)
+- [PebbleONE](https://github.com/ron064/PebbleONE) (compile into library, possiable to pass on without source)
 
 ### for overlay ###
 
